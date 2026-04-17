@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Licensed livestock farm for sale near the Alexandria–Beheira agricultural road. Fully operating for around 15 years with established supply contracts." />
+  <title>Licensed Farm for Sale | Kafr El-Dawwar – Alexandria</title>
+  <link rel="icon" href="../media/4661507.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../media/4661507.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#f6f3ec; --surface:#fffdf8; --ink:#1c2a24; --muted:#4a5c54; --forest:#1e4d3a; --forest-deep:#143729; --gold:#b8922e; --shadow:0 12px 40px rgba(20,55,41,.12); --radius:16px; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:"Inter",system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+    img,video { max-width:100%; height:auto; display:block; }
+    a { color:var(--forest); text-decoration:none; }
+    .wrap { width:min(1120px,100% - 2rem); margin-inline:auto; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:.4rem; padding:.65rem 1.15rem; border-radius:999px; font-weight:600; font-size:.95rem; border:none; cursor:pointer; text-decoration:none; }
+    .btn-primary { background:linear-gradient(135deg,var(--forest) 0%,#2d7a5c 100%); color:#fff; box-shadow:0 4px 16px rgba(30,77,58,.35); }
+    .btn-ghost { background:var(--surface); color:var(--forest); border:1px solid rgba(30,77,58,.2); }
+    header { position:sticky; top:0; z-index:100; background:rgba(246,243,236,.92); backdrop-filter:blur(10px); border-bottom:1px solid rgba(30,77,58,.08); }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.85rem 0; flex-wrap:wrap; }
+    .brand { font-weight:800; font-size:1.1rem; color:var(--forest-deep); }
+    .header-cta { display:flex; gap:.5rem; flex-wrap:wrap; }
+    .hero { position:relative; padding:clamp(2.5rem,6vw,4rem) 0 clamp(3rem,8vw,5rem); overflow:hidden; }
+    .hero-bg { position:absolute; inset:0; z-index:0; }
+    .hero-bg img { width:100%; height:100%; object-fit:cover; filter:brightness(.45); }
+    .hero-bg::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(20,55,41,.55) 0%,rgba(20,40,32,.85) 100%); }
+    .hero .wrap { position:relative; z-index:1; }
+    .badge { display:inline-block; background:rgba(232,217,168,.95); color:var(--forest-deep); padding:.35rem .85rem; border-radius:999px; font-size:.8rem; font-weight:700; margin-bottom:1rem; }
+    .hero h1 { font-size:clamp(1.75rem,5vw,2.65rem); font-weight:800; color:#fff; line-height:1.2; max-width:20ch; }
+    .hero-lead { margin-top:1rem; font-size:clamp(1rem,2.8vw,1.15rem); color:rgba(255,255,255,.92); max-width:60ch; }
+    .hero-actions { margin-top:1.5rem; display:flex; gap:.75rem; flex-wrap:wrap; }
+    .stats { margin-top:-2.5rem; position:relative; z-index:2; padding-bottom:2rem; }
+    .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:1rem; }
+    .stat-card { background:var(--surface); border-radius:var(--radius); padding:1.25rem 1rem; text-align:center; box-shadow:var(--shadow); border:1px solid rgba(30,77,58,.06); }
+    .stat-card strong { display:block; font-size:1.5rem; font-weight:800; color:var(--forest); }
+    .stat-card span { font-size:.88rem; color:var(--muted); margin-top:.35rem; display:block; }
+    section { padding:clamp(2.25rem,5vw,3.4rem) 0; }
+    .section-title { font-size:clamp(1.35rem,3vw,1.8rem); font-weight:800; color:var(--forest-deep); margin-bottom:.5rem; }
+    .section-sub { color:var(--muted); margin-bottom:1.25rem; max-width:65ch; }
+    .feature-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; }
+    .feature { background:var(--surface); border-radius:var(--radius); padding:1.3rem 1.2rem; border-left:4px solid var(--gold); box-shadow:0 4px 20px rgba(20,55,41,.06); }
+    .feature h3 { font-size:1rem; color:var(--forest); margin-bottom:.35rem; }
+    .feature p { color:var(--muted); font-size:.95rem; }
+    .why-list { list-style:none; display:grid; gap:.75rem; }
+    .why-list li { display:flex; align-items:flex-start; gap:.65rem; background:var(--surface); padding:1rem 1.1rem; border-radius:12px; box-shadow:0 2px 12px rgba(20,55,41,.06); }
+    .why-list li::before { content:"✓"; flex-shrink:0; width:1.6rem; height:1.6rem; background:var(--forest); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.85rem; font-weight:800; margin-top:.1rem; }
+    .video-block,.map-wrap { border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); }
+    .video-block { background:#000; aspect-ratio:16 / 9; }
+    .video-block video { width:100%; height:100%; object-fit:contain; }
+    .map-wrap { height:min(420px,55vh); border:1px solid rgba(30,77,58,.1); }
+    .map-wrap iframe { width:100%; height:100%; border:0; }
+    .gallery { background:var(--surface); }
+    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:.65rem; }
+    .gallery-item { border-radius:12px; overflow:hidden; aspect-ratio:4 / 3; cursor:pointer; box-shadow:0 4px 16px rgba(0,0,0,.08); }
+    .gallery-item img { width:100%; height:100%; object-fit:cover; }
+    .lightbox { position:fixed; inset:0; z-index:1000; background:rgba(10,20,16,.92); display:none; align-items:center; justify-content:center; padding:1rem; }
+    .lightbox.open { display:flex; }
+    .lightbox img { max-width:100%; max-height:90vh; object-fit:contain; border-radius:8px; }
+    .lightbox-close { position:absolute; top:1rem; right:1rem; background:#fff; border:none; width:44px; height:44px; border-radius:50%; font-size:1.5rem; cursor:pointer; }
+    footer { background:linear-gradient(160deg,var(--forest-deep) 0%,#0f241c 100%); color:#e8f0ec; padding:clamp(2.3rem,5vw,3.2rem) 0; }
+    footer .section-title { color:#fff; }
+    .contact-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:1rem; }
+    .contact-card { background:rgba(255,255,255,.08); border-radius:var(--radius); padding:1.25rem; border:1px solid rgba(255,255,255,.12); }
+    .contact-card a { color:#e8d9a8; font-weight:700; font-size:1.1rem; display:inline-block; margin-top:.35rem; }
+    .btn-wa { background:#25d366; color:#fff !important; padding:.65rem 1.1rem; border-radius:999px; font-size:.95rem; text-decoration:none !important; display:inline-flex; margin-top:.7rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <span class="brand">Licensed Livestock Farm — For Sale</span>
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="#highlights">Highlights</a>
+        <a class="btn btn-ghost" href="#map">Location</a>
+        <a class="btn btn-ghost" href="/">AR</a>
+        <a class="btn btn-primary" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="../media/WhatsApp Image 2026-04-10 at 19.01.58.jpeg" alt="" width="1920" height="1080" fetchpriority="high" />
+    </div>
+    <div class="wrap">
+      <span class="badge">Rare Investment Opportunity</span>
+      <h1>Fully Licensed Farm Minutes from Smouha</h1>
+      <p class="hero-lead">
+        Located near the Alexandria–Beheira agricultural road, around 200m from the main axis.
+        Fully operating for about 15 years at strong production capacity, with existing supply to restaurants and institutions.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/201222754599?text=Hello%2C%20I%20want%20to%20ask%20about%20the%20farm" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-ghost" href="#gallery" style="background: rgba(255,255,255,0.95); border: none; color: var(--forest-deep);">Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat-card"><strong>2,200 m²</strong><span>Licensed Buildings</span></div>
+        <div class="stat-card"><strong>500 m²</strong><span>Registered Agricultural Land</span></div>
+        <div class="stat-card"><strong>6</strong><span>Livestock Barns</span></div>
+        <div class="stat-card"><strong>&lt; 10 min</strong><span>From Smouha Entrance</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Farm Details</h2>
+      <p class="section-sub">Livestock project with complete licensing, official electricity meters, water access, and full legal documentation.</p>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Full-Scale Operation</h3>
+          <p>The farm is running at high output and ready to continue operations immediately after purchase.</p>
+        </div>
+        <div class="feature">
+          <h3>Furnished Villa + Garden</h3>
+          <p>On-site furnished residential villa with private garden for management or accommodation.</p>
+        </div>
+        <div class="feature">
+          <h3>Strong Location</h3>
+          <p>Near the agricultural road by Kafr El-Dawwar, with easy access to the Alexandria corridor.</p>
+        </div>
+        <div class="feature">
+          <h3>Established Market</h3>
+          <p>Around 15 years of active operations with a known client base and supply relationships.</p>
+        </div>
+        <div class="feature">
+          <h3>Infrastructure + Team</h3>
+          <p>Ready utility setup, experienced labor, and open spaces that support future expansion.</p>
+        </div>
+        <div class="feature">
+          <h3>Production Flexibility</h3>
+          <p>Suitable for fattening, dairy, poultry, or ostrich, depending on buyer strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights">
+    <div class="wrap">
+      <h2 class="section-title">Why This Offer</h2>
+      <p class="section-sub">Legally documented and registered property with ready-to-run assets and established market presence.</p>
+      <ul class="why-list">
+        <li>Licensed operation with registered land and legal paperwork.</li>
+        <li>Operational team and technical experience available on-site.</li>
+        <li>Existing customer base and proven business continuity.</li>
+        <li>Expansion potential through barns and open land layout.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="video">
+    <div class="wrap">
+      <h2 class="section-title">Video Tour</h2>
+      <p class="section-sub">Take a quick look before booking a site visit.</p>
+      <div class="video-block">
+        <video controls playsinline preload="metadata" poster="../media/WhatsApp Image 2026-04-10 at 19.01.58.jpeg">
+          <source src="../media/WhatsApp Video 2026-04-10 at 19.01.58.mp4" type="video/mp4" />
+          Your browser does not support video playback.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <div class="wrap">
+      <h2 class="section-title">Map Location</h2>
+      <p class="section-sub">Coordinates: 31.146749, 30.081985</p>
+      <div class="map-wrap">
+        <iframe title="Farm location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=31.146749,30.081985&amp;z=16&amp;hl=en&amp;output=embed"></iframe>
+      </div>
+      <p style="margin-top: .9rem;"><a href="https://maps.google.com/?q=31.146749,30.081985" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <h2 class="section-title">Photo Gallery</h2>
+      <p class="section-sub">Quick snapshots from the farm and facilities.</p>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">For price details, site visits, and full documents, call or message on WhatsApp.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span>Call / WhatsApp</span>
+          <a href="tel:+201222754599">01222754599</a>
+          <div><a class="btn-wa" href="https://wa.me/201222754599" target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+        <div class="contact-card">
+          <span>Call / WhatsApp</span>
+          <a href="tel:+201224225399">01224225399</a>
+          <div><a class="btn-wa" href="https://wa.me/201224225399" target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Full-size image">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+    <img id="lightbox-img" src="" alt="Farm image" />
+  </div>
+
+  <script>
+    (function () {
+      var images = [
+        "../media/WhatsApp Image 2026-04-10 at 19.01.58.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.01.59 (1).jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.01.59.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.00 (1).jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.00.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.01.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.02.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.04.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.05.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.06.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.07.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.08 (1).jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.08.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.09.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.10.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.11 (1).jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.11.jpeg",
+        "../media/WhatsApp Image 2026-04-10 at 19.02.12.jpeg",
+        "../media/WhatsApp Image 2026-04-12 at 23.00.07.jpeg",
+        "../media/WhatsApp Image 2026-04-12 at 23.00.07 (1).jpeg",
+        "../media/WhatsApp Image 2026-04-12 at 23.00.07 (2).jpeg",
+        "../media/WhatsApp Image 2026-04-12 at 23.00.07 (3).jpeg",
+        "../media/WhatsApp Image 2026-04-12 at 23.00.07 (4).jpeg",
+        "../media/WhatsApp Image 2026-04-12 at 23.00.07 (5).jpeg"
+      ];
+
+      var grid = document.getElementById("gallery-grid");
+      var lightbox = document.getElementById("lightbox");
+      var lightboxImg = document.getElementById("lightbox-img");
+      var closeBtn = document.getElementById("lightbox-close");
+
+      images.forEach(function (src, i) {
+        var div = document.createElement("div");
+        div.className = "gallery-item";
+        var img = document.createElement("img");
+        img.src = src;
+        img.alt = "Farm photo " + (i + 1);
+        img.loading = "lazy";
+        img.decoding = "async";
+        div.appendChild(img);
+        div.addEventListener("click", function () {
+          lightboxImg.src = src;
+          lightboxImg.alt = img.alt;
+          lightbox.classList.add("open");
+          document.body.style.overflow = "hidden";
+        });
+        grid.appendChild(div);
+      });
+
+      function closeLb() {
+        lightbox.classList.remove("open");
+        document.body.style.overflow = "";
+        lightboxImg.src = "";
+      }
+
+      closeBtn.addEventListener("click", closeLb);
+      lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) closeLb();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeLb();
+      });
+    })();
+  </script>
+</body>
+</html>
