@@ -586,17 +586,36 @@
       background: var(--surface);
     }
 
-    .social-card img {
-      width: 100%;
-      height: auto;
-      display: block;
+    .social-card--ad {
+      padding: 1.35rem 1.4rem;
+      max-height: none;
     }
 
-    .social-card figcaption {
-      padding: 0.85rem 1rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-      text-align: center;
+    .ad-copy {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--ink);
+    }
+
+    .ad-copy p {
+      margin-bottom: 0.65rem;
+    }
+
+    .ad-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .ad-copy .ad-contact {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(30, 77, 58, 0.1);
+      font-weight: 700;
+    }
+
+    .ad-copy .ad-contact a {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 1.05rem;
     }
   </style>
 </head>
@@ -654,7 +673,7 @@
         <span class="trust-pill">حوالي ١٥ سنة في السوق</span>
         <span class="trust-pill">توريد لمطاعم ومؤسسات</span>
         <span class="trust-pill">مشروع جاهز للاستثمار الفوري</span>
-        <span class="trust-pill">أرض مُخَرَّسَة ومسجّلة</span>
+        <span class="trust-pill">أرض ملخّصة ومسجّلة</span>
       </div>
     </div>
   </div>
@@ -699,26 +718,34 @@
     <div class="wrap split">
       <div>
         <h2 class="section-title">لمحة من الإعلان</h2>
-        <p class="section-sub">النص نفسه الظاهر على وسائل التواصل: فرصة ذهبية لمشروع حيواني مرخّص بالكامل، على الطريق الزراعي بين إسكندرية والبحيرة، مع فيلا جاهزة وقاعدة عملاء وتشغيل فعلي.</p>
-        <ul class="why-list why-list--tight">
-          <li>استثمار في مشروع رابح وجاهز — لا تنتظر سنوات لبناء السمعة.</li>
-          <li>أوراق ١٠٠٪: تراخيص وعدادات كهرباء ومياه باسم المشروع.</li>
-          <li>معاينة ميدانية؛ التفاصيل الكاملة والصور ومقاطع الفيديو عند الطلب على واتساب.</li>
-        </ul>
+        <p class="section-sub">نفس النص المستخدم عند المشاركة على واتساب والسوشيال — مع تفاصيل إضافية عن المشروع في بقية الصفحة.</p>
       </div>
-      <figure class="social-card">
-        <img src="assets/social-post.png" alt="لقطة من إعلان بيع المزرعة على فيسبوك أو واتساب" width="800" height="1200" loading="lazy" />
-        <figcaption>لقطة من الإعلان الأصلي — للتوضيح فقط</figcaption>
-      </figure>
+      <div class="social-card social-card--ad">
+        <div class="ad-copy">
+          <p>🚨 مزرعة مرخّصة بالكامل على بعد ١٠ دقايق من سموحة؟!</p>
+          <p>💥 فرصة استثمارية نادرة جدًا على الطريق الزراعي (كفر الدوار – إسكندرية)</p>
+          <p>📍 الموقع الذهبي:<br />٢٠٠ متر بس من الطريق الزراعي – يعني في قلب النشاط الحيواني والتجاري</p>
+          <p>🚗 توصلها في أقل من ١٠ دقايق من مدخل سموحة!</p>
+          <p>🐄 مزرعة إنتاج حيواني جاهزة للتشغيل فورًا!</p>
+          <p>🔹 ٢٢٠٠ م² مباني مرخّصة<br />🔹 ٥٠٠ م² أرض زراعية<br />🔹 ٨ عنابر ماشية<br />🔹 فيلا سكنية فاخرة<br />🔹 كهرباء قوية – عدادات قانونية – مياه – أوراق ١٠٠٪</p>
+          <p>💼 ليه تشتريها؟<br />✅ عقود قانونية ومساحة كبيرة مسجّلة<br />✅ فريق إدارة جاهز<br />✅ قاعدة عملاء نشطة بقالها ١٥ سنة<br />✅ مناسبة لكل أنواع الإنتاج: تسمين – ألبان – دواجن – نعام</p>
+          <p>💰 السعر شامل كل حاجة: (أرض + مباني + تراخيص + اسم شغال + عملاء مضمونين)<br />🎗️🎗️ تفاوض في السعر للجادين<br />📈 موسم عيد الأضحى لوحده يغطي تكاليف السنة!</p>
+          <div class="ad-contact">
+            للتواصل
+            <a href="tel:+201224225399">٠١٢٢٤٢٢٥٣٩٩</a>
+            <a href="tel:+201222754599">٠١٢٢٢٧٥٤٥٩٩</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="why">
     <div class="wrap">
       <h2 class="section-title">لماذا تشتريها؟</h2>
-      <p class="section-sub">عقود قانونية وأرض مُخَرَّسَة ومسجّلة وبمساحة واسعة، مع أصول تشغيلية جاهزة وسمعة في السوق.</p>
+      <p class="section-sub">عقود قانونية وأرض ملخّصة ومسجّلة وبمساحة واسعة، مع أصول تشغيلية جاهزة وسمعة في السوق.</p>
       <ul class="why-list">
-        <li>عقود قانونية وأرض مُخَرَّسَة ومسجّلة وبمساحة واسعة.</li>
+        <li>عقود قانونية وأرض ملخّصة ومسجّلة وبمساحة واسعة.</li>
         <li>فريق إدارة وطاقم ميداني جاهز؛ خبرة فنية داخل الموقع.</li>
         <li>قاعدة عملاء نشطة منذ حوالي ١٥ سنة؛ توريد لمطاعم ومؤسسات معروفة.</li>
         <li>مناسبة لكل أنواع الإنتاج: تسمين، ألبان، دواجن، نعام.</li>
@@ -815,7 +842,6 @@
         "media/WhatsApp Image 2026-04-10 at 19.02.10.jpeg",
         "media/WhatsApp Image 2026-04-10 at 19.02.11 (1).jpeg",
         "media/WhatsApp Image 2026-04-10 at 19.02.11.jpeg",
-        "media/WhatsApp Image 2026-04-10 at 19.02.12.jpeg",
         "media/WhatsApp Image 2026-04-12 at 23.00.07.jpeg",
         "media/WhatsApp Image 2026-04-12 at 23.00.07 (1).jpeg",
         "media/WhatsApp Image 2026-04-12 at 23.00.07 (2).jpeg",
